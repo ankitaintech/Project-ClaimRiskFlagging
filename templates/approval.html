@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Linklogo.png">
+
+    <title>Claim Approval</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="log">
+
+       <a href="index.html"><img src="Claim Safe Solutions-1.png" width="16%" alt=""></a> 
+    </div>
+    <div class="form-container">
+        <h2>Insurance Claim Approval</h2>
+        <form id="predictionForm">
+            <div class="form-group">
+                <label for="EngineHP">Engine HP:</label>
+                <input type="text" id="EngineHP" name="EngineHP" required>
+            </div>
+            <div class="form-group">
+                <label for="credit_history">Credit History:</label>
+                <input type="text" id="credit_history" name="credit_history" required>
+            </div>
+            <div class="form-group">
+                <label for="Years_Experience">Years of Experience:</label>
+                <input type="text" id="Years_Experience" name="Years_Experience" required>
+            </div>
+            <div class="form-group">
+                <label for="annual_claims">Annual Claims:</label>
+                <input type="text" id="annual_claims" name="annual_claims" required>
+            </div>
+            <div class="form-group">
+                <label for="Miles_driven_annually">Miles Driven Annually:</label>
+                <input type="text" id="Miles_driven_annually" name="Miles_driven_annually" required>
+            </div>
+            <div class="form-group">
+                <label for="size_of_family">Size of Family:</label>
+                <input type="text" id="size_of_family" name="size_of_family" required>
+            </div>
+            <div class="form-group">
+                <label for="Gender">Gender:</label>
+                <select id="Gender" name="Gender" required>
+                    <option value="1">Female</option>
+                    <option value="2">Male</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Marital_Status">Marital Status:</label>
+                <select id="Marital_Status" name="Marital_Status" required>
+                    <option value="1">Single</option>
+                    <option value="2">Married</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Vehical_type">Vehicle Type:</label>
+                <select id="Vehical_type" name="Vehical_type" required>
+                    <option value="0">Car</option>
+                    <option value="1">Truck</option>
+                    <option value="2">Utility</option>
+                    <option value="3">Van</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Age_bucket">Age Bucket:</label>
+                <select id="Age_bucket" name="Age_bucket" required>
+                    <option value="0">18-27</option>
+                    <option value="1">28-34</option>
+                    <option value="2">35-40</option>
+                    <option value="3">Under 18</option>
+                    <option value="4">Over 40</option>
+                </select>
+            </div>
+            <div class="form-group"></div>
+                <label for="State">State:</label>
+                <select id="State" name="State" required>
+                    <option value="0">AK</option>
+                    <option value="1">AL</option>
+                    <option value="2">AR</option>
+                    <option value="3">AZ</option>
+                    <option value="4">CA</option>
+                    <option value="5">CO</option>
+                    <option value="6">CT</option>
+                    <option value="7">DE</option>
+                    <option value="8">FL</option>
+                    <option value="9">GA</option>
+                    <option value="10">HI</option>
+                    <option value="11">IA</option>
+                    <option value="12">ID</option>
+                    <option value="13">IL</option>
+                    <option value="14">IN</option>
+                    <option value="15">KS</option>
+                    <option value="16">KY</option>
+                    <option value="17">LA</option>
+                    <option value="18">MA</option>
+                    <option value="19">MD</option>
+                    <option value="20">ME</option>
+                    <option value="21">MI</option>
+                    <option value="22">MN</option>
+                    <option value="23">MO</option>
+                    <option value="24">MS</option>
+                    <option value="25">MT</option>
+                    <option value="26">NC</option>
+                    <option value="27">ND</option>
+                    <option value="28">NE</option>
+                    <option value="29">NH</option>
+                    <option value="30">NJ</option>
+                    <option value="31">NM</option>
+                    <option value="32">NV</option>
+                    <option value="33">NY</option>
+                    <option value="34">OH</option>
+                    <option value="35">OK</option>
+                    <option value="36">OR</option>
+                    <option value="37">PA</option>
+                    <option value="38">RI</option>
+                    <option value="39">SC</option>
+                    <option value="40">SD</option>
+                    <option value="41">TN</option>
+                    <option value="42">TX</option>
+                    <option value="43">UT</option>
+                    <option value="44">VA</option>
+                    <option value="45">VT</option>
+                    <option value="46">WA</option>
+                    <option value="47">WI</option>
+                    <option value="48">WV</option>
+                    <option value="49">WY</option>
+                </select>
+            </div>
+            <button type="submit" >Get Prediction</button>
+        </form>
+        
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('predictionForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const params = new URLSearchParams(formData);
+
+            fetch('/predict', {
+                method: 'POST',
+                body: params,
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    document.getElementById('result').innerHTML = `<p style="color:red;">Error: ${data.error}</p>`;
+                } else {
+                    document.getElementById('result').innerHTML = `<p>PREDICTION: ${data.prediction}</p>`;
+                }
+            })
+            .catch(error => {
+                document.getElementById('result').innerHTML = `<p style="color:red;">Error: ${error.message}</p>`;
+            });
+        });
+    </script>
+</body>
+</html>

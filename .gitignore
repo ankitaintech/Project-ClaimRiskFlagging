@@ -1,0 +1,14 @@
+# Ignore Python & Flask-specific stuff
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+env-ankitaProj/
+
+# Ignore Jupyter checkpoint files
+*.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
